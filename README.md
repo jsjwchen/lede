@@ -31,6 +31,7 @@ sudo apt-get -y install build-essential asciidoc binutils bzip2 gawk gettext git
 
 
 6. 输入 `make -j1 V=s` （-j1 后面是线程数。第一次编译推荐用单线程）即可开始编译你要的固件了。
+(后台编译：nohup make -j1 V=s>& make.log &)
 
 本套代码保证肯定可以编译成功。里面包括了 R20 所有源代码，包括 IPK 的。
 
